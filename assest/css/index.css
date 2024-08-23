@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --font-inter: "Inter", sans-serif;
+    --font-Ibm: "IBM Plex Sans", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+    --prymary-color: rgba(97, 130, 100, 1);
+    --color-link: rgba(0, 14, 1, 1);
+    --text-white: rgba(255, 255, 255, 1);
+    --color-title: rgba(121, 172, 120, 1);
+    --color-active: rgba(121, 172, 120, 1);
+    --font-size-default: 10px;
+    --bg-o: rgba(97, 130, 100, 0.658);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html {
+    font-size: var(--font-size-default);
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+nav {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .logo img{
+    width: 109px;
+    height: 75px;
+}
+
+nav ul {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-link);
+    font-weight: 400;
+    font-family: var(--font-Ibm);
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:nth-child(1)  {
+    display: none;
+}
+
+nav ul li:nth-child(3) a {
+    color: var(--color-active);
+    border-bottom: .3rem solid var(--color-active);
+    padding-bottom: .4rem;
+}
+
+nav ul li:nth-child(3) a:hover {
+    text-decoration: none;
+}
+
+nav .btn button {
+    font-weight: 700;
+    font-family: var(--font-inter);
+    background: var(--prymary-color);
+    font-size: 2rem;
+    border-radius: 4rem;
+    padding: 1.5rem 2.5rem;
+    color: var(--text-white);
+    transition: all 1s ease-in-out;
+}
+
+nav .btn button:hover {
+    transform: scale(1.1) rotate(3deg);
+    background: var(--text-white);
+    color: var(--prymary-color);
+    box-shadow: 0 0 1rem .5rem var(--prymary-color);
+}
+
+nav .btn button:active {
+    transform: scale(.9) ;
+}
+
+
+.menu {
+    display: none;
+}
+
+.menu button {
+    background: none;
+    transition: all .30s ease-in-out;
+}
+
+ion-icon:nth-child(1) {
+    color: var(--prymary-color);
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        position: relative;
+    }
+
+    nav .logo img {
+        width: 8.5rem;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-o);
+        backdrop-filter: blur(.4rem);
+        padding: 2rem 0 0 10rem;
+        align-items: flex-start;
+        z-index: 4;
+        gap: 4rem;
+        margin-left: 100%;
+        transition: all .30s ease-in-out;
+    }
+
+    nav ul a {
+        padding: 1rem 2rem;
+        background: var(--text-white);
+        border-radius: 1rem;
+        font-weight: 600;
+    }
+
+    nav ul li:nth-child(1) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2rem;
+        margin-bottom: 0;
+    } 
+
+    nav ul li {
+        margin-bottom: 3rem;
+    }
+
+    
+
+    nav .btn {
+        display: none;
+    }
+
+    nav .menu {
+        display: block;
+    }
+
+    nav .menu button:active {
+        transform: scale(.8);
+    }
+
+    .mobile {
+        margin-left: 0;
+    }
+}

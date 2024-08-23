@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --font-inter: "Inter", sans-serif;
+    --font-Ibm: "IBM Plex Sans", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+    --primary-color: rgb(97, 130, 100);
+    --color-link: rgb(0, 15, 1 ,1);
+    --text-white: rgba(255, 255, 255, 1);
+    --color-title: rgb(121, 172, 120);
+    --font-size-default: 10px;
+    --bg-o: rgba(97, 130, 100, 0.658);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html {
+    font-size: var(--font-size-default);
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+.menu {
+    font-family: var(--font-Ibm);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 154px;
+    margin-left: 64px;
+}
+.menu .francis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: var(--font-Ibm);
+    color: var(--text-white);
+    width: 800.64px;
+    height: 622px;
+    padding-left: 2.3rem;
+}
+.menu .francis img{
+    width: 82rem;
+    margin-left: 0;
+}
+.menu .francis .title{
+    position: absolute;
+    left: 60px;
+    top: 422px;
+}
+.francis .title h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.francis .title p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.menu .pictures{
+    color: var(--color-link);
+    height: 622px;
+    padding-left: 1rem;
+    margin: 0 35px 0 25px;
+    
+}
+.pictures .hebdo{
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    border-left: 8px solid var(--primary-color);
+}
+.pictures .container{
+    margin-top: 3.4rem;
+    display: flex;
+}
+.pictures .container .titre {
+    font-family: var(--font-Ibm);
+    padding-left: 5px;
+}
+.container .titre h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+.container .titre p{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #443434;
+    margin-top: 35px;
+}
+.pictures .container1{
+    margin-top: 3.9rem;
+    display: flex;
+    height: 150px;
+}
+.pictures .container1 .titre {
+    font-family: var(--font-Ibm);
+    padding-left: 5px;
+}
+.container1 .titre h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+.container1 .titre p{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #443434;
+    margin-top: 35px;
+}
+.suite{
+    margin: 134px 35px 40px 64px;
+    display: flex;
+    justify-content: space-around;
+    gap: 11.2rem;
+    width: 343px;
+
+}
+.suite .contenu p{
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 15.75px;
+    color:var(--color-title);
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.suite .contenu h3{
+    font-family: var(--font-Ibm);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: var(--color-link);
+} 
+.actualite{
+    margin-top: 180px;
+    margin-left: 168px;
+    justify-content: center;
+}
+.actualite h2{
+    font-family: var(--font-Ibm);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62.4px;
+    margin-bottom: 6rem;
+}
+.actualite img{
+    align-items: center;
+}
+.programmes .titrePrinci{
+    font-family: var(--font-Ibm);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62.4px;
+    margin-bottom: 6rem;
+    margin-top: 190px;
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+}
+.programmes .programme1{
+    margin: 100px 35px 40px 64px;
+    display: flex;
+    justify-content: space-between;
+}
+.programmes .programme1 .apropos{
+    margin: 20px 35px 20px 25px;
+    align-items: start;
+    display: inline-block;
+}
+.programme1 .apropos h2{
+    font-family: var(--font-Ibm);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62.4px;
+    color: var(--color-title);
+}
+.programme1 .apropos .para{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000e01;
+}
+.programme1 .apropos p{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 4rem;
+    color: #000000;
+}
+.programme1 .apropos .icones{
+    margin-top: 5rem;
+    display: flex;
+    gap: 3.6rem;
+}
+.Cmatin{
+    margin: 100px 35px 40px 64px;
+    display: flex;
+    justify-content: space-between;
+}
+.Cmatin .apropos2{
+    margin: 20px 35px 20px 0;
+    align-items: start;
+    display: inline-block;
+}
+.Cmatin .apropos2 h2{
+    font-family: var(--font-Ibm);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62.4px;
+    color: var(--color-title);
+}
+.Cmatin .apropos2 .para2{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000e01;  
+}
+.Cmatin .apropos2 p{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 4rem;
+    color: #000000; 
+}
+.Cmatin .apropos2 .icones2{
+    margin-top: 5rem;
+    display: flex;
+    gap: 3.6rem;
+}
+.pub{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 46px;
+    margin-top: 10px;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.publicite {
+    width: 126rem;
+    height: 50rem;
+    margin-left: -12rem;
+}
+.hr1{
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--primary-color);
+    margin-left: 78%;
+    margin-top: 1.3rem;
+}
+.pr{
+    width: 90%;
+    height: 50%;
+}
+.hr2{
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--primary-color);
+    margin-left: -6rem;
+    margin-top: -3.5rem;
+    
+} 
+ .h22{
+    margin-left: 0;
+    font-size: 4rem;
+} 
+.titrePub{
+    width:49.5rem;
+    height: 5rem; 
+    font-family: var(--font-Ibm);
+    color: var(--primary-color);
+    rotate: -90deg;
+    margin-top: 22.3rem;
+    padding-left: 6rem;
+    margin-left: -25rem;
+    margin-right: -25rem;
+
+}
+footer{
+    width: 100%;
+    height: 426px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-title);
+}
+footer .foot{
+    justify-content: center;
+    text-align: center;
+    width: 395.84px;
+    height: 284.82px;
+}
+footer .foot .contact{
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 430px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        display: inline;
+    }
+    .menu .francis{
+        width: 39rem;
+        height: 40rem;
+        justify-content: center;
+        position: relative;
+        padding-left: 2.3rem;
+    }
+    .menu .francis img{
+        width: 100%;
+        margin-left: .4rem;
+    }
+    .menu .francis .title{
+        position: absolute;
+        top: 24.6rem;
+        left: 5rem;
+    }
+    .francis .title h2{
+        font-size: 1.9rem;
+    }
+    .francis .title p{
+        font-size: .9rem;
+    }
+    .pictures .hebdo{
+        margin-top: 0;
+        font-size: 1.6rem;
+    }
+    .pictures .container{
+        width: 38rem;
+        margin-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        border-bottom: 0.2px solid #0000005d;
+    }
+    .pictures .container img{
+        width: 17.5rem;
+        height: 12.4rem;
+    }
+    .container .titre p{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    .pictures .container1{
+        padding-top: 0;
+        width: 38rem;
+    }
+    .pictures .container1 img{
+        width: 17.5rem;
+        height: 12.4rem;
+        font-size: 1rem;
+    }
+    .pictures .container1 p{
+        font-size: 2rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    .suite{
+        margin: 5rem 3.5rem 4rem 3rem;
+        gap : 8rem;
+        overflow: scroll;
+    }
+    .suite .contenu :nth-child(1){
+        margin-right: 4rem;
+        margin-left: 5rem; 
+    }
+    .contenu :nth-child(1) p{
+        margin-left: 5rem;
+    }
+    .suite .contenu {
+        justify-content: center; 
+        width: 28rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .suite .contenu img{
+        width: 25.5rem;
+        height: 21.2rem;
+        gap: .5rem;
+    }
+    .suite .contenu p{
+        font-size: 1.3rem;
+        margin-left: 9rem;
+    }
+    .suite .contenu h3{
+        font-size: 1.8rem;
+        margin-left: 6rem;
+    }
+    .actualite{
+        margin-top: 4rem;
+        margin-left: 2.3rem;
+    }
+    .actualite h2{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .actualite img{
+        margin-top: 0;
+        width: 38.7rem;
+        height: 22.2rem;
+    }
+    .programmes {
+        display: inline-block;
+        margin-left: 2.6rem;
+    }
+    .programmes .titrePrinci{
+        width: 43rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .programmes .programme1{
+        width: 43rem;
+        display: inline;
+        margin-left: 2.6rem;
+    }
+    .programmes .programme1 img{
+        margin-top: 0;
+        width: 38.7rem;
+        height: 22.2rem;
+    }
+    .programme1 .apropos{
+        width: 38rem;
+        padding-left: 0;
+    }
+    .programme1 .apropos h2{
+        font-size: 3.2rem;
+        margin-top: 1.5rem;
+    }
+    .programme1 .apropos .para{
+       font-family: var(--font-open-sans);
+        margin-top: 1.1rem;
+        font-size :1.4rem;
+        font-weight: 400;
+        line-height: 1.91rem;
+    } 
+    .programme1 .apropos p{
+        margin-top: 1.1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: var(--font-open-sans);
+    }
+    .programme1 .apropos .icones{
+        margin-top: 3rem;
+        width: 43rem;
+        margin-bottom: 0px;
+    }
+    .apropos .icones img{
+        height: 3.3rem;
+        width: 2.7rem;
+    }
+    .programmes .suites .contenu .img1{
+        width: 16.2rem;
+        height: 15rem;
+        margin-left: 2.3rem;
+    }
+    .Cmatin{
+        flex-direction: column-reverse;
+        margin-left: 2rem;
+    }
+    .Cmatin .apropos2{
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    .Cmatin .apropos2 .para2{
+        font-family: var(--font-open-sans);
+        margin-top: .11rem;
+        font-size :1.4rem;
+        font-weight: 400;
+        line-height: 1.91rem;
+    }
+    .Cmatin .apropos2 p{
+        margin-top: 1.1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: var(--font-open-sans);
+        line-height: 2.04rem;
+    }
+    .Cmatin .apropos2 .icones2{
+        margin-top: 3.5rem;
+    }
+    .apropos2 .icones2 img{
+        width: 2.62rem;
+        height: 3.3rem;
+    }
+    .Cmatin .img2 img{
+        margin-left: 0;
+        width: 36.1rem;
+        height: 21.9rem;
+    }
+    .pub{
+        padding-top: 3rem;
+        padding-left: 0;
+        display: inline;
+        width: 100%;
+        height: 40rem;
+        margin-left: 1.3rem;
+        align-items: center;
+    }
+    .titrePub{
+        rotate: 0deg;
+        height: 3rem;
+        width: 100%;
+        padding: .4rem 6rem 3.5rem 1.7rem;
+        border-left: 1rem solid var(--primary-color);
+        margin: 0 1.2rem 1.6rem 1.2rem;
+    }
+    .hr2{
+        background-color: transparent;
+    }
+    .h22{
+        padding-left: 0;
+        font-size: 3.4rem;
+        margin-bottom: 2rem;
+    }
+    .hr1{
+        background-color: transparent;
+    }
+    .pr img{
+        width: 40.8rem;
+        height: 24.9rem;
+        margin-left: 0;
+    }
+    .pr{
+        width: 100%;
+        height: 100%;
+        margin-left: 1.2rem;
+        margin-right: 1rem;
+        align-items: center;
+    }
+    footer{
+        width: 43rem;
+        height: 25.4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .foot{
+        width: 16rem;
+        height: 14.1rem;
+    }
+    footer .foot img{
+        width: 15.04rem;
+        height: 10.7rem;
+    }
+    .foot .contact img{
+        width: 2.2rem;
+        height: 2.7rem;
+    }
+}
